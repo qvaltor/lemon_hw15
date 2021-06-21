@@ -1,0 +1,385 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+
+/* ГАЙКА */
+
+.screw-nut {
+    position: relative;
+    margin: 100px;
+    width: 120px;
+    height: 70px;
+    transform: rotate(90deg);
+    background: radial-gradient(circle,white 50%, gray 50% );
+    box-shadow: 0px 0px 10px 0px grey;
+}
+
+.screw-nut::before {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0;
+    position: absolute;
+    top: -35px;
+    border-bottom: 35px solid grey;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+}
+
+.screw-nut::after {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0;
+    position: absolute;
+    top: 70px;
+    border-bottom: 35px solid grey;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    transform: rotate(180deg);
+    
+}
+
+/* КЛЮЧ */
+
+.wrench {
+    position: absolute;
+    top: -40px;
+    left: 420px;
+    width: 90px;
+    height: 350px;
+    background: grey;
+    transform: rotate(90deg);
+}
+
+.wrench::before {
+    display: block;
+    content: "";
+    width: 90px;
+    height: 90px;
+    
+    position: absolute;
+    top: -50px;
+    background: radial-gradient(circle,white 20%, gray 20% );
+    border-radius: 50%;
+}
+
+.test1 {
+    position: absolute;
+    left: 500px;
+    width: 50px;
+    height: 50px;
+    top: 110px;
+    left: 245px;
+    background-color: grey;
+}
+
+.test1::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    top: -39px;
+    left: -30px;
+    border-bottom: transparent solid 50px;
+    border-top: grey solid 40px;
+    border-left: transparent solid 30px;
+    background-color: rgba(34, 0, 255, 0);
+}
+
+.test1::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    top: -30px;
+    left: -30px;
+    border-bottom: grey solid 40px;
+    border-top: transparent solid 50px;
+    border-left: transparent solid 30px;
+    background-color: transparent;
+}
+
+
+.wrench-horn {
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    background: rgba(128, 128, 128, 0);
+    top: -8px;
+    left: 115px;
+    border-bottom: grey solid  40px;
+    border-left: solid transparent 30px;
+    border-right: solid  transparent 30px;
+}
+
+.wrench-horn::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    top: 207px;
+    left: -28px;
+    border-left: solid  transparent 30px;
+    border-right: solid  transparent 30px;
+    border-top: grey solid   40px;
+    border-bottom: rgba(238, 130, 238, 0) solid 30px;
+
+}
+
+
+/* БОЛТ */
+
+.main-bolt {
+    padding: 50px;
+}
+
+.bolt {
+    position: absolute;
+    width: 80px;
+    height: 200px;
+    background: repeating-linear-gradient(-35deg,
+    transparent,
+    transparent 0px,
+    grey 0px,
+    grey 30px,
+    black 30px,
+    black 35px);
+    left: 150px;
+    transform: rotate(90deg);
+}
+
+.bolt::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    top: -60px;
+    left: -35px;
+    background: repeating-linear-gradient(90deg,
+    transparent,
+    transparent 0px,
+    grey 0px,
+    grey 48px,
+    black 48px,
+    black 50px);
+    border: solid black 2px;
+    border-radius: 25px 25px 0 0;
+
+}
+
+/* ВИНТ */
+
+/* .main-bolt1 {
+    padding: 50px;
+} */
+
+.bolt1 {
+    position: absolute;
+    display: block;
+    left: 550px;
+    width: 80px;
+    height: 80px;
+    background-color: grey;
+    top: 640px;
+}
+
+.bolt1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 120px;
+    height: 80px;
+    top: -80px;
+    background-color: grey;
+    border-radius: 0 100% 0 0;
+}
+
+.bolt1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 120px;
+    height: 80px;
+    top: 80px;
+    background-color: grey;
+    border-radius: 0 0 100% 0;
+}
+
+.bolt2 {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 120px;
+    background: repeating-linear-gradient(-60deg,
+    transparent,
+    transparent 0px,
+    grey 0px,
+    grey 20px,
+    grey 50px,
+    black 50px,
+    black 52px);
+    left: 128px;
+    top: 620px;
+    border-right: solid black 4px;
+}
+
+.bolt2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 101%;
+    background-color: grey;
+}
+
+
+/* Корабль */
+
+
+
+.board {
+    position: absolute;
+    width: 100px;
+    height: 540px;
+    background-color: rgb(101, 67, 33);
+    background-clip: content-box;
+    top: 1100px;
+    left: 400px;
+    border-bottom: rgb(101, 67, 33) solid 50px;
+    border-right: rgba(0, 100, 0, 0) solid 50px;
+    transform: rotate(-90deg);
+}
+
+.board::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -58px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 60px solid rgb(101, 67, 33);
+}
+
+.board::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 588px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 70px solid rgb(101, 67, 33);
+}
+
+
+.rigging {
+    position: absolute;
+    width: 20px;
+    height: 540px;
+    top: 830px;
+    left: 500px;
+    background-color: black;
+}
+
+.rigging::before {
+    content: "";
+    position: absolute;
+    width: 540px;
+    height: 540px;
+    /* background-color: darkcyan; */
+    border-radius: 50%;
+    top: 0px;
+    left: -250px;
+    box-shadow: 35px 35px 0 0 rgb(255, 36, 0);
+    transform: rotate(135deg);
+}
+
+
+.rigging::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-top: 40px solid rgb(255, 36, 0);
+    border-left: 60px solid rgb(255, 36, 0);
+    border-bottom: 40px solid rgb(255, 36, 0);
+}
+
+
+
+.sail {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: absolute;
+  left: 370px;
+  top: 970px;
+  transform: rotate(45deg);
+}
+
+.sail:before {
+  content: "";
+  display: block;
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  box-shadow: 150px -50px 0 0 red;
+}
+
+.ship {
+    transform: translate(0,0);
+    transition: all 2s ease-in-out;
+    padding: 0 0 50px 0;
+}
+
+body div.ship:hover {
+    transform: translate(350px,0);
+    transition-timing-function: cubic-bezier(0, 0, .58, 1);
+}
