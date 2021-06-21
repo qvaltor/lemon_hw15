@@ -118,7 +118,7 @@ border-spacing: 0;
     position: absolute;
     width: 50px;
     height: 30px;
-    top: -39px;
+    top: -40px;
     left: -30px;
     border-bottom: transparent solid 50px;
     border-top: grey solid 40px;
@@ -145,7 +145,7 @@ border-spacing: 0;
     width: 120px;
     height: 40px;
     background: rgba(128, 128, 128, 0);
-    top: -8px;
+    top: -9px;
     left: 115px;
     border-bottom: grey solid  40px;
     border-left: solid transparent 30px;
@@ -157,8 +157,8 @@ border-spacing: 0;
     position: absolute;
     width: 120px;
     height: 40px;
-    top: 207px;
-    left: -28px;
+    top: 208px;
+    left: -29px;
     border-left: solid  transparent 30px;
     border-right: solid  transparent 30px;
     border-top: grey solid   40px;
@@ -375,11 +375,10 @@ border-spacing: 0;
 
 .ship {
     transform: translate(0,0);
-    transition: all 2s ease-in-out;
+    transition: all 5s ease-in-out;
     padding: 0 0 50px 0;
 }
 
 body div.ship:hover {
     transform: translate(350px,0);
-    transition-timing-function: cubic-bezier(0, 0, .58, 1);
 }
